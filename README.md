@@ -88,3 +88,15 @@ queries/
 - Common Table Expressions (CTEs)
 - CASE Statements
 
+
+# Dashboard
+The SQL analysis was further visualized using Power BI to create an interactive dashboard featuring:
+- Revenue KPIs
+- Customer Segmentation
+- Customer Lifetime Value (CLV)
+- Revenue by Country
+- Top Products
+- Business Insights & Recommendations
+
+# Author
+Sandhiya Karthikeyan
