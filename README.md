@@ -73,7 +73,7 @@ queries/
 - Analyzed country-wise revenue
 - Generated business recommendations
 
-# 6. Skills Demonstrated
+# Skills Demonstrated
 
 - SQL
 - Google BigQuery
@@ -89,7 +89,7 @@ queries/
 - CASE Statements
 
 
-# 7. Dashboard
+# Dashboard
 The SQL analysis was further visualized using Power BI to create an interactive dashboard featuring:
 - Revenue KPIs
 - Customer Segmentation
