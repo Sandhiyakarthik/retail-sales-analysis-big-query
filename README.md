@@ -73,5 +73,18 @@ queries/
 - Analyzed country-wise revenue
 - Generated business recommendations
 
+# Skills Demonstrated
 
+- SQL
+- Google BigQuery
+- Data Cleaning
+- Exploratory Data Analysis (EDA)
+- RFM Analysis
+- Customer Segmentation
+- Customer Lifetime Value (CLV) Analysis
+- Business Intelligence
+- Aggregate Functions
+- Window Functions
+- Common Table Expressions (CTEs)
+- CASE Statements
 
