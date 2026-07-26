@@ -73,7 +73,7 @@ queries/
 - Analyzed country-wise revenue
 - Generated business recommendations
 
-# Skills Demonstrated
+# 6. Skills Demonstrated
 
 - SQL
 - Google BigQuery
@@ -89,7 +89,7 @@ queries/
 - CASE Statements
 
 
-# Dashboard
+# 7. Dashboard
 The SQL analysis was further visualized using Power BI to create an interactive dashboard featuring:
 - Revenue KPIs
 - Customer Segmentation
@@ -97,6 +97,10 @@ The SQL analysis was further visualized using Power BI to create an interactive 
 - Revenue by Country
 - Top Products
 - Business Insights & Recommendations
+
+# Power BI Dashboard
+<img width="885" height="497" alt="RFM Dashboard" src="https://github.com/user-attachments/assets/efbf244e-597d-4a91-b522-1e834cf71c95" />
+<img width="879" height="493" alt="RFM Business Insights" src="https://github.com/user-attachments/assets/e4d9d22a-70ca-4fc3-a024-b070e9eb30f6" />
 
 # Author
 Sandhiya Karthikeyan
