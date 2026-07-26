@@ -1,0 +1,92 @@
+-- 1. Total Revenue
+-- How much total revenue was generated?
+SELECT
+    ROUND(SUM(Revenue), 2) AS Total_Revenue
+FROM `retail-customer-analytics.retail_analysis.cleaned_retail`;
+
+-- 2. Total Customers
+-- How many unique customers made purchases?
+
+SELECT
+    COUNT(DISTINCT Customer) AS Total_Customers
+FROM `retail-customer-analytics.retail_analysis.cleaned_retail`;
+
+-- 3. Total Orders
+-- How many orders were placed?
+
+SELECT
+    COUNT(DISTINCT Invoice) AS Total_Orders
+FROM `retail-customer-analytics.retail_analysis.cleaned_retail`;
+
+-- 4. Average Order Value
+-- What is the average value per order?
+
+SELECT
+    ROUND(
+        SUM(Revenue) / COUNT(DISTINCT Invoice),
+        2
+    ) AS Average_Order_Value
+FROM `retail-customer-analytics.retail_analysis.cleaned_retail`;
+
+-- 5. Monthly Revenue Trend
+-- How has revenue changed over time?
+
+SELECT
+    FORMAT_DATETIME('%Y-%m', InvoiceDate) AS Month,
+    ROUND(SUM(Revenue), 2) AS Revenue
+FROM `retail-customer-analytics.retail_analysis.cleaned_retail`
+GROUP BY Month
+ORDER BY Month;
+
+-- 6. Revenue by Country
+-- Which countries generate the most revenue?
+
+SELECT
+    Country,
+    ROUND(SUM(Revenue), 2) AS Revenue
+FROM `retail-customer-analytics.retail_analysis.cleaned_retail`
+GROUP BY Country
+ORDER BY Revenue DESC;
+
+-- 7. Top 10 Customers
+-- Who are the highest revenue-generating customers?
+SELECT
+    Customer,
+    ROUND(SUM(Revenue), 2) AS Revenue
+FROM `retail-customer-analytics.retail_analysis.cleaned_retail`
+GROUP BY Customer
+ORDER BY Revenue DESC
+LIMIT 10;
+
+-- 8. Top 10 Products
+-- Which products generate the highest revenue?
+SELECT
+    Description,
+    SUM(Quantity) AS Units_Sold,
+    ROUND(SUM(Revenue), 2) AS Revenue
+FROM `retail-customer-analytics.retail_analysis.cleaned_retail`
+GROUP BY Description
+ORDER BY Revenue DESC
+LIMIT 10;
+
+-- 9. Monthly Orders
+-- How many orders are placed each month?
+
+SELECT
+    FORMAT_DATETIME('%Y-%m', InvoiceDate) AS Month,
+    COUNT(DISTINCT Invoice) AS Orders
+FROM `retail-customer-analytics.retail_analysis.cleaned_retail`
+GROUP BY Month
+ORDER BY Month;
+
+-- 10. Average Revenue per Customer
+-- What is the average revenue generated per customer?
+SELECT
+    ROUND(AVG(CustomerRevenue), 2) AS Avg_Revenue_Per_Customer
+FROM (
+    SELECT
+        Customer,
+        SUM(Revenue) AS CustomerRevenue
+    FROM `retail-customer-analytics.retail_analysis.cleaned_retail`
+    GROUP BY Customer
+);
