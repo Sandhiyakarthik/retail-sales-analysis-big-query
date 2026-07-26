@@ -1,4 +1,4 @@
---View sample data
+--View Sample data
 SELECT *
 FROM `retail-customer-analytics.retail_analysis.Online_Retail`
 LIMIT 10;
@@ -7,11 +7,11 @@ LIMIT 10;
 SELECT COUNT(*) AS total_rows
 FROM `retail-customer-analytics.retail_analysis.Online_Retail`;
 
---Count distinct customers
+--Count Distinct customers
 SELECT COUNT(DISTINCT Customer) AS total_customers
 FROM `retail-customer-analytics.retail_analysis.Online_Retail`;
 
---Check date range
+--Check Date range
 SELECT
   MIN(InvoiceDate) AS first_purchase,
   MAX(InvoiceDate) AS last_purchase
