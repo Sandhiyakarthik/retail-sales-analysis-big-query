@@ -3,7 +3,9 @@ Retail sales analysis using Google Big Query SQL to uncover customer behavior, r
 
 # Project Overview
 
-This project analyzes the Online Retail dataset using Google BigQuery SQL to uncover customer purchasing behavior, revenue trends, product performance, and customer segmentation. The analysis focuses on transforming raw transactional data into meaningful business insights that support data-driven decision-making.
+This project delivers an end-to-end retail analytics solution by transforming raw transactional data into actionable business insights using Google BigQuery SQL and Power BI. The analysis focuses on uncovering customer purchasing patterns, revenue drivers, product performance trends, and customer segmentation through data cleaning, exploratory analysis, and RFM modeling.
+
+By applying advanced SQL techniques and analytical frameworks, the project identifies key business opportunities, such as high-value customer segments, sales growth patterns, and product-level performance insights. The final interactive dashboard enables data-driven decision-making by presenting meaningful KPIs and visual insights that help businesses optimize customer engagement, improve retention strategies, and maximize revenue potential.
 
 # Objectives
 
