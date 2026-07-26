@@ -26,5 +26,52 @@ This project analyzes the Online Retail dataset using Google BigQuery SQL to unc
 - SQL
 - Power BI
 
+# Repository Structure
+
+queries/
+├── 01_data_cleaning.sql
+├── 02_data_exploration.sql
+├── 03_exploratory_data_analysis.sql
+├── 04_rfm_analysis.sql
+└── 05_business_insights.sql
+
+# Analysis Performed
+
+# 1. Data Cleaning
+- Removed duplicate records
+- Removed cancelled invoices
+- Removed rows with missing Customer IDs
+- Created a Revenue column
+- Validated data quality
+
+# 2. Data Exploration
+- Explored customer, product, and country information
+- Checked sales distribution
+- Identified transaction trends
+
+# 3. Exploratory Data Analysis (EDA)
+- Revenue by country
+- Top-selling products
+- Customer purchasing behavior
+- Revenue trends
+
+# 4. RFM Analysis
+- Calculated Recency
+- Calculated Frequency
+- Calculated Monetary Value
+- Segmented customers into:
+  - Champions
+  - Loyal Customers
+  - Potential Loyalists
+  - Needs Attention
+  - At Risk
+  - Lost Customers
+
+# 5. Business Insights
+- Identified high-value customers
+- Found top-performing products
+- Analyzed country-wise revenue
+- Generated business recommendations
+
 
 
