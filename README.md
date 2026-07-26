@@ -24,6 +24,7 @@ This project analyzes the Online Retail dataset using Google BigQuery SQL to unc
 
 - Google BigQuery
 - SQL
+- Google Cloud Console
 - Power BI
 
 # Repository Structure
@@ -87,7 +88,6 @@ queries/
 - Window Functions
 - Common Table Expressions (CTEs)
 - CASE Statements
-
 
 # Dashboard
 The SQL analysis was further visualized using Power BI to create an interactive dashboard featuring:
